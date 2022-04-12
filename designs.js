@@ -22,11 +22,13 @@ function makeGrid(e) {
             row.appendChild(column);
         }
     }
-
+    submit.removeEventListener("click", makeGrid);
+    // TODO remove after testing
     console.log(height.value);
     console.log(width.value);
     console.log("Is this working?");
 }
 
 submit.addEventListener("click", makeGrid);
+
 
